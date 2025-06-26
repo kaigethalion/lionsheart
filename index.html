@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .huge-text {
+        font-size: 35px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: left;
+      }
+       .button-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      button {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="myText" class="huge-text" style="text-align: topRight;">
+      Lion's Heart Sound
+    </p>
+
+    <!-- Empty div to hold buttons -->
+    <div id="buttonContainer" class="button-container"></div>
+    <script>
+      // Change the font color of the text
+      document.getElementById("myText").style.color = "lavender";// or any color like "#FF6600", "blue", etc.
+      document.body.style.backgroundColor = "gray"
+
+      // Create buttons using JavaScript
+      const buttonContainer = document.getElementById("buttonContainer");
+
+      // Helper function to create buttons
+      function createButton(text, onClickAction) {
+        const button = document.createElement("button");
+        button.textContent = text;
+        button.onclick = onClickAction;
+        buttonContainer.appendChild(button);
+      }
+
+      // Create multiple buttons
+      createButton("Home", function () {
+        
+      });
+
+      createButton("Music", function () {
+        document.body.style.backgroundColor = "gray";
+        document.getElementById("myText").style.color = "lavender";
+      });
+
+      createButton("About Us", function () {
+        document.body.style.backgroundColor = "gray";
+        document.getElementById("myText").style.color = "lavender";
+      });
+
+      createButton("Merch", function () {
+        document.body.style.backgroundColor = "gray";
+        document.getElementById("myText").style.color = "lavender";
+      });
+
+      createButton("Contact Us", function () {
+        document.body.style.backgroundColor = "gray";
+        document.getElementById("myText").style.color = "lavender";
+      });
+    </script>
+ 
+
+  </body>
+     
+      
+
+  
+
+</html>
